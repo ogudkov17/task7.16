@@ -1,0 +1,6 @@
+Для файла динамической библиотеки:
+g++ -c dynamic.cpp -o dynamic.o -fPIC
+g++ -shared dynamic.o -o libdynamic.so
+
+Для исполняемого файла:
+g++ main.cpp -o main -ldl
